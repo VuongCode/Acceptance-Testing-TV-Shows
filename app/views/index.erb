@@ -1,0 +1,9 @@
+<h1>List of Shows</h1>
+
+  <ul>
+  <% @television_shows.each do |show|%>
+  <li><%= show.title%> (<%= show.network %>)</li>
+  <% end %>
+  </ul>
+  <br>
+  <a href="/television_shows/new">Add a new show</a>
